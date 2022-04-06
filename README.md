@@ -1,6 +1,6 @@
 # c Single Dungeon
 
-## Olá aventureiro! Seja bem vindo ao c Single Dungeon!
+## Olá aventureiro! Seja bem vindo ao c Single Dungeon
 
 Este é um Simulador de Dungeons escrito em Linguagem C!
 
@@ -12,7 +12,7 @@ Fernando Serra
 
 ---
 
-## Hello adventurer! Welcome to c Single Dungeon!
+## Hello adventurer! Welcome to c Single Dungeon
 
 This is a Dungeons Simulator written in C Language!
 
