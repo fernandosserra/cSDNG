@@ -1,0 +1,1 @@
+int warrior[6]
