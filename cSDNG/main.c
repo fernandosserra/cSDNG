@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Bloco principal de execução / Main execution block
+//Bloco principal de execucao / Main execution block
 int main()
 {
     int selection;
@@ -24,7 +24,7 @@ int main()
     return 0;
 }
 
-//Função de Seleção em Português
+//Funcao de Selecao em Portugues
 int lang_ptbr(){
     int tmp_class = 0;
     int chClass = 0;
@@ -44,7 +44,7 @@ int lang_ptbr(){
                 tmp_class = 0;
             }
             } else if (tmp_class == 2) {
-                printf("Magos sao mestres no uso das forças sobrenaturais. Como mago voce recebe os seguintes:\n+2 de ataque magico\n-1 de defesa\n+1 de esquiva\n");
+                printf("Magos sao mestres no uso das forcas sobrenaturais. Como mago voce recebe os seguintes:\n+2 de ataque magico\n-1 de defesa\n+1 de esquiva\n");
                 printf("Deseja mesmo ser um mago?\n1 - SIM\n2 - Preciso pensar melhor...");
             } else {
                 printf("Eu, seu narrador, sou um velho cansado, tenho dificuldade em entender algumas coisas, por favor, selecione uma das duas respostas que lhe pedi.\n");
@@ -60,6 +60,7 @@ int lang_ptbr(){
 //English Selection Function
 int lang_enus(){
     int tmp_class = 0;
+    int chClass = 0;
     do{
         printf("Welcome to C Single Dungeon!\n");
         printf("Choose your class:\n");
@@ -67,15 +68,22 @@ int lang_enus(){
         scanf("%d", &tmp_class);
         if (tmp_class == 1){
         printf("Warriors are lethal in hand-to-hand combat. As a warrior you receive the following bonuses:\n+2 attack\n+1 defense\n-1 dodge\n-2 magical defense\n");
-        printf("Do you really want to be a warrior?\n1 - YES\n2 - I need to think better...");
-    } else if (tmp_class == 2) {
-        printf("Mages are masters in the use of supernatural forces. As a mage you receive the following bonuses:\n+2 magical attack\n-1 defense\n+1 dodge\n");
-        printf("Do you really want to be a mage?\n1 - YES\n2 - I need to think better...");
-    } else {
-        printf("I, your narrator, am a tired old man, I have difficulty understanding some things, please select one of the two answers I asked you.\n");
-        system("PAUSE");
-        system("CLS");
-    }
+        printf("Do you really want to be a warrior?\n1 - YES\n2 - I need to think better...\n");
+        scanf("%d", &chClass);
+        if (chClass == 1){
+                warriorEnUs();
+        } else {
+            chClass = 0;
+            tmp_class = 0;
+            }
+        } else if (tmp_class == 2) {
+            printf("Mages are masters in the use of supernatural forces. As a mage you receive the following bonuses:\n+2 magical attack\n-1 defense\n+1 dodge\n");
+            printf("Do you really want to be a mage?\n1 - YES\n2 - I need to think better...");
+        } else {
+            printf("I, your narrator, am a tired old man, I have difficulty understanding some things, please select one of the two answers I asked you.\n");
+            system("PAUSE");
+            system("CLS");
+        }
     } while (tmp_class > 2 || tmp_class < 1);
     return 0;
 }
@@ -88,8 +96,8 @@ int warriorPtBr(){
     int dodge = 1;
     int healthPoints = 8;
 
-    printf("Ao finalmente se decidir, o velho contador de historias em sua frente da um sorriso e lhe oferece uma caneca que contem um liquido borbulhante. Esta frio e voce toma, pensando em se aquecer\n");
-    printf("\nSeus pensamentos sao interrompidos quase que imediatamente, uma dor repentina surge na base da sua nuca e tudo fica escuro...");
+    printf("Ao finalmente se decidir, o velho contador de historias em sua frente da um sorriso e lhe oferece uma caneca que contem um liquido borbulhante. Esta frio e voce toma, pensando em se aquecer.\n");
+    printf("\nSeus pensamentos sao interrompidos quase que imediatamente, uma dor repentina surge na base da sua nuca e tudo fica escuro...\n");
 }
 
 int warriorEnUs(){
@@ -99,6 +107,9 @@ int warriorEnUs(){
     int magicalDefense = 0;
     int dodge = 1;
     int healthPoints = 8;
+
+    printf("When you finally make up your mind, the old storyteller in front of you smiles and offers you a mug that contains a bubbly liquid. It's cold and you drink it, thinking to warm up.\n");
+    printf("\nYour thoughts are interrupted almost immediately, a sudden pain appears at the base of your neck and everything goes dark...\n");
 }
 
 int mage(){
