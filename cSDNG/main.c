@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 		selectedLanguage = lang_PtBR();
 	} else if (selection == 2) {
 		printf("You have chosen to play in English\n");
-		selectedLanguage =  lang_EnUS();
+		selectedLanguage = lang_EnUS();
 	} else {
 		printf("Digite uma opcao valida! /  Choose a valid option!\n\n");
 	}
