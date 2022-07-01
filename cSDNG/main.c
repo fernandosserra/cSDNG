@@ -5,21 +5,21 @@
 //Bloco principal de execucao / Main execution block
 int main(int argc, char *argv[]) {
 	int selection = 0;
-	int selectedLanguage = 0;	
-	printf("Hello Adventurer! Welcome to C Single Dungeon\n");
-	printf("Type 1 for Portuguese, 2 for English: \n");
+	int selectedLanguage = 0;
+	printf("\n\t\tHello Adventurer! Welcome to C Single Dungeon");
+	printf("\n\t\tType 1 for Portuguese, 2 for English:\n\t\t");
 	scanf("%d", &selection);
 	if (selection == 1) {
-		printf("Voce escolheu jogar em Portugues\n");
+		printf("\n\t\tVoce escolheu jogar em Portugues");
 		selectedLanguage = lang_PtBR();
 	} else if (selection == 2) {
-		printf("You have chosen to play in English\n");
+		printf("\n\t\tYou have chosen to play in English");
 		selectedLanguage = lang_EnUS();
 	} else {
-		printf("Digite uma opcao valida! /  Choose a valid option!\n\n");
+		printf("\n\t\tDigite uma opcao valida! /  Choose a valid option!");
 	}
 	while (selection > 2 || selection < 1) {
-		printf("Type 1 for Portuguese, 2 for English: \n");
+		printf("\n\t\tType 1 for Portuguese, 2 for English:\n\t\t");
 		scanf("%d", &selection);
 	}
 	return 0;
