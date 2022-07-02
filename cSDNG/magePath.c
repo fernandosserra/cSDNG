@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "cloudyWater.h"
+#include "swampVillage.h"
+#include "specialEvent.h"
 
 int magePathPtBR() {
 	int baseHP = 5;
@@ -28,6 +31,16 @@ int magePathPtBR() {
 
 	printf("\n\t\t1 - Ir para a Vila da Agua Turva\n\t\t2 - Ir para o Povoado do Charco\n\t\t3 - Nao fazer nada\n\t\t");
 	scanf("%d", &decidirCidade);
+	
+	do{
+		if(decidirCidade == 1){
+			decidirCidade = cloudyWater();
+		} else if(decidirCidade == 2){
+			decidirCidade = swampVillage();
+		} else{
+			decidirCidade = specialEvent();
+		}
+	} while (decidirCidade > 2 || decidirCidade < 1);
 
 }
 
