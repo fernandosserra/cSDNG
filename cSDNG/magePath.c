@@ -27,20 +27,21 @@ int magePathPtBR() {
 	printf("\n\t\tPovoado do Charco - 1km nesta direcao");
 	printf("\n\t\tOs nomes nao parecem animadores, mas voce sente que nao ha muita escolha. O que deseja fazer?");
 
-	int decidirCidade = 0;
+	int chooseCity = 0;
+	int cityChosen;
 
 	printf("\n\t\t1 - Ir para a Vila da Agua Turva\n\t\t2 - Ir para o Povoado do Charco\n\t\t3 - Nao fazer nada\n\t\t");
-	scanf("%d", &decidirCidade);
+	scanf("%d", &chooseCity);
 	
 	do{
-		if(decidirCidade == 1){
-			decidirCidade = cloudyWater();
-		} else if(decidirCidade == 2){
-			decidirCidade = swampVillage();
+		if(chooseCity == 1){
+			cityChosen = cloudyWater();
+		} else if(chooseCity == 2){
+			cityChosen = swampVillage();
 		} else{
-			decidirCidade = specialEvent();
+			cityChosen = specialEvent();
 		}
-	} while (decidirCidade > 2 || decidirCidade < 1);
+	} while (chooseCity > 2 || chooseCity < 1);
 
 }
 
