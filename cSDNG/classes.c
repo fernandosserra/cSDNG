@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Funco para invocar e selecionar a classe de guerreiro, em lingua portuguesa
+//Funcao para invocar e selecionar a classe de guerreiro, em lingua portuguesa
 int warriorPtBR() {
 	int atk = 3;
 	int magicalAtk = 0;

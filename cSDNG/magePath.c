@@ -35,11 +35,11 @@ int magePathPtBR() {
 	
 	do{
 		if(chooseCity == 1){
-			cityChosen = cloudyWater();
+			cityChosen = cloudyWaterPtBR();
 		} else if(chooseCity == 2){
-			cityChosen = swampVillage();
+			cityChosen = swampVillagePtBR();
 		} else{
-			cityChosen = specialEvent();
+			cityChosen = specialEventPtBR();
 		}
 	} while (chooseCity > 2 || chooseCity < 1);
 
