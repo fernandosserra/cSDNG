@@ -71,7 +71,7 @@ int magePathEnUS() {
 	int chooseCity = 0;
 	int cityChosen;
 
-	printf("\n\t\t1 - Ir para a Vila da Agua Turva\n\t\t2 - Ir para o Povoado do Charco\n\t\t3 - Nao fazer nada\n\t\t");
+	printf("\n\t\t1 - Go to Blackwater Swamps\n\t\t2 - Go to Pond Village\n\t\t3 - Do nothing\n\t\t");
 	scanf("%d", &chooseCity);
 	
 	do{
