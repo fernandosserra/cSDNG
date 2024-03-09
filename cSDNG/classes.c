@@ -57,6 +57,7 @@ int mageEnUS() {
 	int magicalDefense = 2;
 	int dodge = 2;
 	int healthPoints = 5;
+	mageSelected = magePathEnUS();
 
 	system("cls");
 	printf("\n\t\tNoting that you finally decided, the old storyteller in front of you a smile and offers you a mug that contains a bubbling liquid. It's cold and you take it, thinking of warming up.");

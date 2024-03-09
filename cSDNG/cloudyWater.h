@@ -1,6 +1,6 @@
 #ifndef CLOUDYWATER_H
 #define CLOUDYWATER_H
 
-int cloudyWater();
+int cloudyWaterPtBR();
 
 #endif /* CLOUDYWATER_H*/

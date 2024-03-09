@@ -1,6 +1,6 @@
 #ifndef SPECIALEVENT_H
 #define SPECIALEVENT_H
 
-int specialEvent();
+int specialEventPtBR();
 
 #endif /* SPECIALEVENT_H*/
