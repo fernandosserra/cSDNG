@@ -24,7 +24,7 @@ int lang_PtBR() {
 				tmp_class = 0;
 			}
 		} else if (tmp_class == 2) {
-			printf("\n\t\tMagos sao mestres no uso das forcas sobrenaturais. Como mago voce recebe os seguintes:\n\t\t+2 de ataque magico\n\t\t-1 de defesa\n\t\t+1 de esquiva");
+			printf("\n\t\tMagos sao mestres no uso das forcas magicas do mundo. Como mago voce recebe os seguintes:\n\t\t+2 de ataque magico\n\t\t-1 de defesa\n\t\t+1 de esquiva");
 			printf("\n\t\tDeseja mesmo ser um mago?\n\t\t1 - SIM\n\t\t2 - Preciso pensar melhor...\n\t\t");
 			scanf("%d", &confirmClass);
 			if (confirmClass == 1) {
