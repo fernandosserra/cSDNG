@@ -76,11 +76,11 @@ int magePathEnUS() {
 	
 	do{
 		if(chooseCity == 1){
-			cityChosen = cloudyWaterPtBR();
+			cityChosen = cloudyWaterEnUS();
 		} else if(chooseCity == 2){
-			cityChosen = swampVillagePtBR();
+			cityChosen = swampVillageEnUS();
 		} else{
-			cityChosen = specialEventPtBR();
+			cityChosen = specialEventEnUS();
 		}
 	} while (chooseCity > 2 || chooseCity < 1);
 
