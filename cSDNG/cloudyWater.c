@@ -3,7 +3,9 @@
 #include "classes.h"
 
 //Variáveis de escolha local
-int localOption, apotecharyMenu, healthPotion, suspiciousLiquid;
+int localOption, apotecharyMenu;
+int healthPotion =3;
+int suspiciousLiquid =-3;
 
 
 // Função global em português
@@ -33,14 +35,11 @@ int apotecharyPtBR(){
 	printf("\n\t\t 3- Nao tomar nada")
 	do {scanf("%d", &apotecharyMenu);
 		if(apotecharyMenu == 1){
+
 		}else if(apotecharyMenu == 2){
 		}else{			
 		}
-	} while (/* condition */apotecharyMenu > 3 && apotecharyMenu < 1);
-	
-	
-
-	if(apotecharyMenu==1)
+	} while (apotecharyMenu > 3 && apotecharyMenu < 1);
 }
 
 // Função do Apotecário em Inglês
@@ -52,5 +51,10 @@ int apotecharyEnUS(){
 	printf("\n\t\t 1- Take the Purple Potion");
 	printf("\n\t\t 2- Take the Green Potion");
 	printf("\n\t\t 3- Nao tomar nada")
-	scanf("%d", &apotecharyMenu);
+	do {scanf("%d", &apotecharyMenu);
+		if(apotecharyMenu == 1){
+		}else if(apotecharyMenu == 2){
+		}else{			
+		}
+	} while (apotecharyMenu > 3 && apotecharyMenu < 1);
 }

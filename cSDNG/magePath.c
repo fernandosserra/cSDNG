@@ -31,9 +31,9 @@ int magePathPtBR() {
 	int cityChosen;
 
 	printf("\n\t\t1 - Ir para a Vila da Agua Turva\n\t\t2 - Ir para o Povoado do Charco\n\t\t3 - Nao fazer nada\n\t\t");
-	scanf("%d", &chooseCity);
 	
 	do{
+		scanf("%d", &chooseCity);
 		if(chooseCity == 1){
 			cityChosen = cloudyWaterPtBR();
 		} else if(chooseCity == 2){
@@ -72,9 +72,9 @@ int magePathEnUS() {
 	int cityChosen;
 
 	printf("\n\t\t1 - Go to Blackwater Swamps\n\t\t2 - Go to Pond Village\n\t\t3 - Do nothing\n\t\t");
-	scanf("%d", &chooseCity);
 	
 	do{
+		scanf("%d", &chooseCity);
 		if(chooseCity == 1){
 			cityChosen = cloudyWaterEnUS();
 		} else if(chooseCity == 2){
