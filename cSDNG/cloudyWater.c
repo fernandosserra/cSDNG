@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "classes.h"
 
 //Variáveis de escolha local
 int localOption, apotecharyMenu, healthPotion, suspiciousLiquid;
@@ -27,9 +28,19 @@ int apotecharyPtBR(){
 	printf("\n\t\t — Saudacoes, estrangeiro. Nao e todo dia que recebemos visitantes por aqui. O que vai ser?");
 	printf("\n\t\t Notando sua indecisao, ele continua: ");
 	printf("\n\t\t Aqui nao tem muita opcao, nos temos uma Pocao Roxa e uma Pocao Verde, qual delas voce quer tomar?");
-	printf("\n\n 1- Tomar a Poção Roxa");
-	printf("\n\n 2- Tomar a Poção Verde");
-	scanf("%d", &apotecharyMenu);
+	printf("\n\t\t 1- Tomar a Poção Roxa");
+	printf("\n\t\t 2- Tomar a Poção Verde");
+	printf("\n\t\t 3- Nao tomar nada")
+	do {scanf("%d", &apotecharyMenu);
+		if(apotecharyMenu == 1){
+		}else if(apotecharyMenu == 2){
+		}else{			
+		}
+	} while (/* condition */apotecharyMenu > 3 && apotecharyMenu < 1);
+	
+	
+
+	if(apotecharyMenu==1)
 }
 
 // Função do Apotecário em Inglês
@@ -38,7 +49,8 @@ int apotecharyEnUS(){
 	printf("\n\t\t — Greetings, foreigner. It's not every day that we receive visitors here. What will it be?");
 	printf("\n\t\t Noticing your indecision, he continues: ");
 	printf("\n\t\t There aren't many options here, we have a Purple Potion and a Green Potion, which one do you want to take?");
-	printf("\n\n 1- Take the Purple Potion");
-	printf("\n\n 2- Take the Green Potion");
+	printf("\n\t\t 1- Take the Purple Potion");
+	printf("\n\t\t 2- Take the Green Potion");
+	printf("\n\t\t 3- Nao tomar nada")
 	scanf("%d", &apotecharyMenu);
 }
