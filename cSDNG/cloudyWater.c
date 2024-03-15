@@ -30,13 +30,14 @@ int apotecharyPtBR(){
 	printf("\n\t\t — Saudacoes, estrangeiro. Nao e todo dia que recebemos visitantes por aqui. O que vai ser?");
 	printf("\n\t\t Notando sua indecisao, ele continua: ");
 	printf("\n\t\t Aqui nao tem muita opcao, nos temos uma Pocao Roxa e uma Pocao Verde, qual delas voce quer tomar?");
-	printf("\n\t\t 1- Tomar a Poção Roxa");
-	printf("\n\t\t 2- Tomar a Poção Verde");
+	printf("\n\t\t 1- Tomar a Pocao Roxa");
+	printf("\n\t\t 2- Tomar a Pocao Verde");
 	printf("\n\t\t 3- Nao tomar nada")
 	do {scanf("%d", &apotecharyMenu);
 		if(apotecharyMenu == 1){
-
+			printf("\n\t\t Voce toma a pocao roxa e sente um fluxo de poder correndo em suas veias.");
 		}else if(apotecharyMenu == 2){
+			printf("\n\t\t Voce toma a pocao verde e sente uma pontada no estômago, algo nao esta certo.");			
 		}else{			
 		}
 	} while (apotecharyMenu > 3 && apotecharyMenu < 1);
