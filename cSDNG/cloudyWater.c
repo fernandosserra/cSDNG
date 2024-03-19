@@ -10,10 +10,10 @@ int suspiciousLiquid =-3;
 
 // Função global em português
 int cloudyWaterPtBR(){
-	printf("\n\t\t A pequena fila de casas parece ter sido construida de modo a se alinhar com uma velha igreja, construida em pedra.");
-	printf("\n\t\t O cheiro inconfundivel de peixe velho e cachorro molhado chega as suas narinas. Voce se sente nauseado, nao sabe se ainda e o efeito da bebida do velho, ou se e o cheiro que o incomoda mais.");	
-	printf("\n\t\t O que e certo, e que esse lugar tem um certo charme, parece mesmo uma vila onde as pessoas sao reservadas e vivem sua vida sem se preocupar com o mundo ao redor...");
-	printf("\n\t\t Ao passar pelo que seria um velho portao, ladeado por muros caidos, voce nota uma placa que diz em letras desgastadas \'Boticario\'");
+	printf("\n\t\t A pequena fila de casas parece ter sido construida de modo a se alinhar com\n\t\tuma velha igreja, construida em pedra.");
+	printf("\n\t\t O cheiro inconfundivel de peixe velho e cachorro molhado chega as suas narinas.\n\t\tVoce se sente nauseado, nao sabe se ainda e o efeito da bebida do velho,\n\t\tou se e o cheiro que o incomoda mais.");	
+	printf("\n\t\t O que e certo, e que esse lugar tem um certo charme, parece mesmo uma vila\n\t\tonde as pessoas sao reservadas e vivem sua vida sem se preocupar com o mundo ao redor...");
+	printf("\n\t\t Ao passar pelo que seria um velho portao, ladeado por muros caidos,\n\t\tvoce nota uma placa que diz em letras desgastadas \'Boticario\'");
 	printf("\n\t\t Mais adiante, ha uma outra placa, ainda mais deteriorada que diz \'Estalagem\'");
 	printf("\n\t\t Onde voce deseja ir?\n\t\t");
 	printf("\n\t\t 1 - Boticario");
@@ -35,10 +35,10 @@ int cloudyWaterPtBR(){
 
 // Global function in English
 int cloudyWaterEnUS(){
-	printf("\n\t\t The small row of houses appears to have been built to line up with an old stone church.");
-	printf("\n\t\t The unmistakable smell of old fish and wet dog reaches your nostrils. You feel nauseous, you don't know if it's still the effect of the old man's drink, or if it's the smell that bothers you more.");	
-	printf("\n\t\t What is certain is that this place has a certain charm, it really seems like a village where people are reserved and live their lives without worrying about the world around them...");
-	printf("\n\t\t As you pass by what would be an old gate, flanked by fallen walls, you notice a sign that says in worn letters \'Apothecary\'");
+	printf("\n\t\t The small row of houses appears to have been built to line up\n\t\twith an old stone church.");
+	printf("\n\t\t The unmistakable smell of old fish and wet dog reaches your nostrils.\n\t\tYou feel nauseous, you don't know if it's still the effect of the old man's drink,\n\t\tor if it's the smell that bothers you more.");	
+	printf("\n\t\t What is certain is that this place has a certain charm,\n\t\tit really seems like a village where people are reserved and live their lives without worrying about the world around them...");
+	printf("\n\t\t As you pass by what would be an old gate, flanked by fallen walls,\n\t\tyou notice a sign that says in worn letters \'Apothecary\'");
 	printf("\n\t\t Further on, there is another sign, even more deteriorated, that says \'Inn\'");
 	printf("\n\t\t Where do you want to go?\n\t\t");
 	printf("\n\t\t 1 - Apothecary");
@@ -101,9 +101,17 @@ int apothecaryEnUS(){
 }
 
 int innPtBR(){
-
+	printf("\n\t\t A velha estalagem tem um cheiro de mofo e velas queimadas.\n\t\tNo balcao, uma mulher baixinha e robusta sorri:");
+	printf("\n\t\t Bem vindo ao Caramujo Caolho! O que vai querer?");
+	printf("\n\t\t 1 - Eu quero um quarto");
+	printf("\n\t\t 2 - Eu quero uma refeicao");
+	printf("\n\t\t 3 - Voce sabe de alguma coisa interessante?");
 }
 
 int innEnUS(){
-	
+	printf("\n\t\t The old inn has a musty smell and burnt candles.\n\t\tAt the counter, a short, stout woman smiles:");
+	printf("\n\t\t Welcome to One-Eyed Caramujo! What do you want?");
+	printf("\n\t\t 1 - I want a room");
+	printf("\n\t\t 2 - I want a meal");
+	printf("\n\t\t 3 - Do you know anything interesting?");
 }
