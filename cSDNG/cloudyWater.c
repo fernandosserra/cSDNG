@@ -101,17 +101,45 @@ int apothecaryEnUS(){
 }
 
 int innPtBR(){
+	int innMenuPtBR;
 	printf("\n\t\t A velha estalagem tem um cheiro de mofo e velas queimadas.\n\t\tNo balcao, uma mulher baixinha e robusta sorri:");
 	printf("\n\t\t Bem vindo ao Caramujo Caolho! O que vai querer?");
 	printf("\n\t\t 1 - Eu quero um quarto");
 	printf("\n\t\t 2 - Eu quero uma refeicao");
 	printf("\n\t\t 3 - Voce sabe de alguma coisa interessante?");
+	switch (innMenuEnUS)
+	{
+	case 1:
+		printf("\n\t\t Ah, voce quer um quarto? Claro que temos um!")
+		break;
+	
+	case 2:
+		printf("\n\t\t Por hora so temos carne de porco e peixe frito!")
+		break;
+
+	default:
+		break;
+	}
 }
 
 int innEnUS(){
+	int innMenuEnUS;
 	printf("\n\t\t The old inn has a musty smell and burnt candles.\n\t\tAt the counter, a short, stout woman smiles:");
 	printf("\n\t\t Welcome to One-Eyed Caramujo! What do you want?");
 	printf("\n\t\t 1 - I want a room");
 	printf("\n\t\t 2 - I want a meal");
 	printf("\n\t\t 3 - Do you know anything interesting?");
+	switch (innMenuEnUS)
+	{
+	case 1:
+		printf("\n\t\t Oh! Do you want a room? Sure, we have one!")
+		break;
+	
+	case 2:
+		printf("\n\t\t For now, we hake some pork and fried fish!")
+		break;
+
+	default:
+		break;
+	}
 }
