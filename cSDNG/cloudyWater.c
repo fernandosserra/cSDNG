@@ -107,16 +107,19 @@ int innPtBR(){
 	printf("\n\t\t 1 - Eu quero um quarto");
 	printf("\n\t\t 2 - Eu quero uma refeicao");
 	printf("\n\t\t 3 - Voce sabe de alguma coisa interessante?");
-	switch (innMenuEnUS)
+	switch (innMenuPtBR)
 	{
 	case 1:
-		printf("\n\t\t Ah, voce quer um quarto? Claro que temos um!")
+		printf("\n\t\t Ah, voce quer um quarto? Claro que temos um!");
 		break;
 	
 	case 2:
-		printf("\n\t\t Por hora so temos carne de porco e peixe frito!")
+		printf("\n\t\t Por hora so temos carne de porco e peixe frito!");
 		break;
 
+	case 3:
+		printf("\n\t\t Hummm... Depende, por algums moedas, eu posso saber...");
+	
 	default:
 		break;
 	}
@@ -132,11 +135,15 @@ int innEnUS(){
 	switch (innMenuEnUS)
 	{
 	case 1:
-		printf("\n\t\t Oh! Do you want a room? Sure, we have one!")
+		printf("\n\t\t Oh! Do you want a room? Sure, we have one!");
 		break;
 	
 	case 2:
-		printf("\n\t\t For now, we hake some pork and fried fish!")
+		printf("\n\t\t For now, we hake some pork and fried fish!");
+		break;
+	
+	case 3:
+		printf("\n\t\t Hmm... It depends, for a few coins, I might have heard something...");
 		break;
 
 	default:
