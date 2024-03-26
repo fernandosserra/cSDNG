@@ -74,7 +74,8 @@ int apothecaryPtBR(){
 			printf("\n\t\t Voce toma a pocao verde e sente uma pontada no estomago, algo nao esta certo.");			
 		}else{
 			printf("\n\t\t O velho da uma risada enquanto diz:\n");
-			printf("\n\t\t Nao sao todos que tem estomago para as minhas garrafadas!");
+			printf("\n\t\t Nao sao todos que tem estomago para as minhas garrafadas!\n\t\tAcho melhor voce voltar outra hora.");
+			cloudyWaterPtBR();
 		}
 	} while (apotecharyMenu > 3 && apotecharyMenu < 1);
 }
@@ -95,13 +96,15 @@ int apothecaryEnUS(){
 			printf("\n\t\t You drink the green potion and feel an intense pain in your stomach, something is not right.");
 		}else{
 			printf("\n\t\t The old man laughs while saying:\n");
-			printf("\n\t\t Not everyone has the stomach for my drinks!");						
+			printf("\n\t\t Not everyone has the stomach for my drinks!\n\t\tI think you'd better come back another time.");
+			cloudyWaterEnUS();						
 		}
 	} while (apotecharyMenu > 3 && apotecharyMenu < 1);
 }
 
 int innPtBR(){
 	int innMenuPtBR;
+	int roomPtBR;
 	
 	printf("\n\t\t A velha estalagem tem um cheiro de mofo e velas queimadas.\n\t\tNo balcao, uma mulher baixinha e robusta sorri:");
 	printf("\n\t\t Bem vindo ao Caramujo Caolho! O que vai querer?");
@@ -112,21 +115,19 @@ int innPtBR(){
 	switch (innMenuPtBR)
 	{
 	case 1:
-		int roomPtBR;
-		
 		printf("\n\t\t Ah, voce quer um quarto? Claro que temos um!\n\t\tVoce gostaria de um quarto duplo, ou simples?");
 		printf("\n\t\t 1 - Quarto Simples");
 		printf("\n\t\t 2 - Quarto Duplo");
 		
-		do(scanf("%d",&roomPtBR)){
-		}while (roomPtBR < 0 && roomPtBR > 2);
-		
-		if(roomPtBR == 1){
-			printf("\n\t\t Aqui esta sua chave! Tenha um bom descanso");
-		}else{
-			printf("\n\t\t Aqui esta sua chave. Por favor, tome cuidado com a lareira");
-		}
-
+		do{
+			scanf("%d",&roomPtBR);
+			
+			if(roomPtBR == 1){
+				printf("\n\t\t Aqui esta sua chave! Tenha um bom descanso");
+			}else{
+				printf("\n\t\t Aqui esta sua chave. Por favor, tome cuidado com a lareira");
+			}	
+		} while (roomPtBR < 0 && roomPtBR > 2);
 
 		break;
 	
@@ -136,6 +137,8 @@ int innPtBR(){
 
 	case 3:
 		printf("\n\t\t Hummm... Depende, por algums moedas, eu posso saber...");
+		printf("\n\t\t /'Ao entregar algumas moedas para o homem, ele surrurra em seu ouvido:");
+		printf("\n\t\t O velho cemitério tem alguns problemas com a gestao principal.\n\t\t Se eu fosse voce, investigaria por la");
 	
 	default:
 		break;
@@ -144,39 +147,45 @@ int innPtBR(){
 
 int innEnUS(){
 	int innMenuEnUS;
+	int roomEnUS;
+
 	printf("\n\t\t The old inn has a musty smell and burnt candles.\n\t\tAt the counter, a short, stout woman smiles:");
 	printf("\n\t\t Welcome to One-Eyed Caramujo! What do you want?");
 	printf("\n\t\t 1 - I want a room");
 	printf("\n\t\t 2 - I want a meal");
 	printf("\n\t\t 3 - Do you know anything interesting?");
+	
 	switch (innMenuEnUS)
 	{
 	case 1:
-		int roomEnUS;
 
 		printf("\n\t\t Oh! Do you want a room? Sure, we have one!");
 		printf("\n\t\t 1 - Simple Room");
 		printf("\n\t\t 2 - Double Room");
 
-		do(scanf("%d",&roomEnUs)){
-		}while (roomEnUs < 0 && roomEnUs > 2);
-		
-		if(roomPtBR == 1){
-			printf("\n\t\t Here is your key! Have a nice rest");
-		}else{
-			printf("\n\t\t Here is your key. Please be careful with the fireplace");
-		}
+		do{
+			scanf("%d",&roomEnUS);
+			if(roomEnUS == 1){
+				printf("\n\t\t Here is your key! Have a nice rest");
+			}else{
+				printf("\n\t\t Here is your key. Please be careful with the fireplace");
+		}		
+		} while (roomEnUS < 0 && roomEnUS > 2);
+				
 		break;
 	
 	case 2:
 		printf("\n\t\t For now, we hake some pork and fried fish!");
+		
 		break;
 	
 	case 3:
 		printf("\n\t\t Hmm... It depends, for a few coins, I might have heard something...");
+		
 		break;
 
 	default:
+		
 		break;
 	}
 }
