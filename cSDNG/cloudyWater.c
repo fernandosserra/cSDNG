@@ -102,6 +102,7 @@ int apothecaryEnUS(){
 	} while (apotecharyMenu > 3 && apotecharyMenu < 1);
 }
 
+// Função da estalagem
 int innPtBR(){
 	int innMenuPtBR;
 	int roomPtBR;
@@ -145,6 +146,7 @@ int innPtBR(){
 	}
 }
 
+// Inn Function
 int innEnUS(){
 	int innMenuEnUS;
 	int roomEnUS;
@@ -181,6 +183,8 @@ int innEnUS(){
 	
 	case 3:
 		printf("\n\t\t Hmm... It depends, for a few coins, I might have heard something...");
+		printf("\n\t\t /'When handing some coins to the man, he whispers in his ear:");
+		printf("\n\t\t The old cemetery has some problems with the main management.\n\t\t If I were you, I would investigate there");
 		
 		break;
 
