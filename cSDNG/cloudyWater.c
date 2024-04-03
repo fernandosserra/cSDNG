@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "classes.h"
+#include "cloudyWaterEvents.h"
 
 //Variáveis de escolha local
 int localOption, apotecharyMenu;
@@ -152,7 +153,7 @@ int innEnUS(){
 	int roomEnUS;
 
 	printf("\n\t\t The old inn has a musty smell and burnt candles.\n\t\tAt the counter, a short, stout woman smiles:");
-	printf("\n\t\t Welcome to One-Eyed Caramujo! What do you want?");
+	printf("\n\t\t Welcome to One-Eyed Snail! What do you want?");
 	printf("\n\t\t 1 - I want a room");
 	printf("\n\t\t 2 - I want a meal");
 	printf("\n\t\t 3 - Do you know anything interesting?");
